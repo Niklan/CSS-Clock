@@ -5,11 +5,13 @@
     var time;
     var hr;
     var min;
+    var sec;
 
     function setTime(date) {
         time = new Date(date)
         hr = time.getHours();
         min = time.getMinutes();
+        sec = time.getSeconds();
     }
 
     setInterval(function () {
@@ -44,5 +46,7 @@
             '-o-transform': 'rotate(' + minDeg + 'deg)',
             'transform': 'rotate(' + minDeg + 'deg)'
         });
+
+        $("#clock-text").html(hr + ":" + min + ":" + sec);
     }, 1000);
 })(jQuery);

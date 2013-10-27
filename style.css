@@ -64,3 +64,13 @@ body {
     transform: rotate(0deg);
     transition: all 500ms;
 }
+
+#clock-text {
+    position: absolute;
+    color: white;
+    width: 100%;
+    text-align: center;
+    top: 15px;
+    font-family: Arial;
+    font-size: 12px;
+}
